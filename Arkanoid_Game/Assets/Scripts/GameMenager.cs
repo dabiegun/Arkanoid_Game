@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ public class GameMenager : MonoBehaviour
         if (_instance != null)
         {
             Destroy(gameObject);
+
         }
         else
         {
@@ -25,6 +27,4 @@ public class GameMenager : MonoBehaviour
     #endregion
 
     public bool IsGameStarted { get; set; }
-
 }
- 
